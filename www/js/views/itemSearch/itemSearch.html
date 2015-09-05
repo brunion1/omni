@@ -1,0 +1,22 @@
+<ion-view>
+    <div class="bar bar-header bar-positive ">
+        <h1 class="title">Omni</h1>
+    </div>
+	<ion-content class="has-header">
+        <div class="list card"  ng-repeat="item in items track by $index">
+          <div class="item item-thumbnail-left">
+              <img src="{{item.thumbnailImage}}">
+              <h2>{{item.title}}</h2>
+              <p>{{item.description}}</p>
+          </div>
+          <a class="item" ng-repeat="storeInfo in item.stores" ng-href="{{storeInfo.url}}">
+                <span style="float:left">
+                    {{storeInfo.storeName}}
+                </span>
+                <span style="float:right">
+                    ${{storeInfo.price}}
+                </span>
+          </a>
+        </div>
+	</ion-content>
+</ion-view>

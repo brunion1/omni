@@ -1,0 +1,28 @@
+<ion-view>
+	<ion-content>
+        <div class="row">
+            <div class="col" 
+                 style="padding: 20%;
+                        font-size: 4.4em;
+                        color: #75afff !important;
+                        text-align: center;">
+                Omni
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="list">
+                  <label class="item item-input">
+                    <i class="icon ion-search placeholder-icon icon-right"></i>
+                    <input type="text" placeholder="Search" ng-model="searchString">
+                  </label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button class="button button-positive button-block" ng-click="itemSearch(searchString)">Item Search</button>
+            </div>
+        </div>
+	</ion-content>
+</ion-view>
